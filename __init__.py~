@@ -36,3 +36,5 @@ def qgisMinimumVersion():
 def classFactory(iface):
     from diagleg import DiagLeg
     return DiagLeg(iface)
+def authorName():
+  return "Joana Simoes"

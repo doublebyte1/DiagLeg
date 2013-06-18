@@ -20,7 +20,7 @@
  ***************************************************************************/
  This script initializes the plugin, making it known to QGIS.
 """
-appVers=1.1
+appVers=1.2
 
 def name():
     return "Diagram Legend Plugin"
