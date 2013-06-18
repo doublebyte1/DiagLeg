@@ -196,6 +196,8 @@ class DiagLegDialog(QDialog):
   
     def onOk(self):
       self.ui.textEdit.clear()
+      self.ui.view.scene().clear()
+
             
       aLayer = iface.activeLayer()   
       
