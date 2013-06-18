@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiagLeg</class>
+ <widget class="QDialog" name="DiagLeg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Diagram Legend</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/diagleg/icon.png</normaloff>:/diagleg/icon.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="textEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGraphicsView" name="view"/>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushGenerate">
+       <property name="toolTip">
+        <string>Click to generate legend</string>
+       </property>
+       <property name="whatsThis">
+        <string>It generates the legend</string>
+       </property>
+       <property name="text">
+        <string>Generate</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushExport">
+       <property name="toolTip">
+        <string>Export the legend to an image or a webpage</string>
+       </property>
+       <property name="whatsThis">
+        <string>Click to export the legend to an image or a webpage</string>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushClose">
+       <property name="toolTip">
+        <string>Closes this dialogue</string>
+       </property>
+       <property name="whatsThis">
+        <string>This closes the dialogue</string>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushAbout">
+       <property name="toolTip">
+        <string>About DiagLeg</string>
+       </property>
+       <property name="whatsThis">
+        <string>Click to show information about the credits of plugin</string>
+       </property>
+       <property name="text">
+        <string>About</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushGenerate</sender>
+   <signal>clicked()</signal>
+   <receiver>DiagLeg</receiver>
+   <slot>onOk()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushClose</sender>
+   <signal>clicked()</signal>
+   <receiver>DiagLeg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushExport</sender>
+   <signal>clicked()</signal>
+   <receiver>DiagLeg</receiver>
+   <slot>onExport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushAbout</sender>
+   <signal>clicked()</signal>
+   <receiver>DiagLeg</receiver>
+   <slot>onAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onOk()</slot>
+  <slot>onExport()</slot>
+  <slot>onAbout()</slot>
+ </slots>
+</ui>
