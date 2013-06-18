@@ -27,7 +27,7 @@ tags=Charts, Legend, Pie, Overlay
 
 homepage=http://ladybug.no-ip.org:8010/mediawiki/index.php/Pie_Chart_Legend
 tracker=http://hub.qgis.org/projects/diagleg
-repository=https://github.com/doublebyte1/diagleg
+repository=https://github.com/doublebyte1/DiagLeg.git
 icon=icon.png
 # experimental flag
 experimental=True
