@@ -196,6 +196,8 @@ class DiagLegDialog(QDialog):
   
     def onOk(self):
       self.ui.textEdit.clear()
+      self.ui.view.scene().clear()
+
             
       aLayer = iface.activeLayer()   
       
@@ -247,5 +249,5 @@ class DiagLegDialog(QDialog):
       self.saveDoc(filename)
       
     def onAbout(self):     
-	QMessageBox.about(self, "About DiagLeg %2.1f..." % appVers , "This plugin was developed in the context of the EAF-Nansen project.<p> The EAF-Nansen Project \"Strengthening the Knowledge Base for and Implementing an Ecosystem Approach to Marine Fisheries in Developing Countries\" (GCP/INT/003/NOR) is an initiative to support the implementation of the ecosystem approach in the management of marine fisheries. The aim is to promote sustainable utilization of marine living resources and improved protection of the marine environment.<p> <a href=\"http://www.eaf-nansen.org/nansen/en\">http://www.eaf-nansen.org/nansen/en</a>");
+	QMessageBox.about(self, "About DiagLeg %2.2f..." % appVers , "This plugin was developed in the context of the EAF-Nansen project.<p> The EAF-Nansen Project \"Strengthening the Knowledge Base for and Implementing an Ecosystem Approach to Marine Fisheries in Developing Countries\" (GCP/INT/003/NOR) is an initiative to support the implementation of the ecosystem approach in the management of marine fisheries. The aim is to promote sustainable utilization of marine living resources and improved protection of the marine environment.<p> <a href=\"http://www.eaf-nansen.org/nansen/en\">http://www.eaf-nansen.org/nansen/en</a>");
 
