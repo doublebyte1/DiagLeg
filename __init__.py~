@@ -20,7 +20,7 @@
  ***************************************************************************/
  This script initializes the plugin, making it known to QGIS.
 """
-appVers=1.21
+appVers=1.2
 
 def name():
     return "Diagram Legend Plugin"
@@ -34,7 +34,7 @@ def icon():
 def qgisMinimumVersion():
     return "1.6"
 def qgisMinimumVersion():
-    return "2.99"
+    return "1.8"
 def classFactory(iface):
     from diagleg import DiagLeg
     return DiagLeg(iface)

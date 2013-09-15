@@ -11,9 +11,9 @@
 [general]
 name=Diagram Legend Plugin
 qgisMinimumVersion=1.6
-qgisMaximumVersion=2.99
+qgisMaximumVersion=1.8
 description=This plugin allows to create a legend, for diagrams generated through the "Overlay" tab of the layer properties.
-version=1.21
+version=1.2
 #category=Raster
 
 # end of mandatory metadata
